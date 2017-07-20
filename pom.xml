@@ -929,6 +929,17 @@
     </profile>
   </profiles>
 
+  <distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <url>http://nexus:8081/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+        <id>releases</id>
+        <url>http://nexus:8081/nexus/content/repositories/releases</url>
+    </repository>
+  </distributionManagement>
+
   <!-- ==================================================================== -->
   <properties>
     <!-- Plugin version numbers -->
@@ -974,16 +985,4 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <tz.database.version>2017b</tz.database.version>
   </properties>
-
-  <distributionManagement>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <url>http://nexus:8081/nexus/content/repositories/snapshots</url>
-    </snapshotRepository>
-    <repository>
-        <id>releases</id>
-        <url>http://nexus:8081/nexus/content/repositories/releases</url>
-    </repository>
-  </distributionManagement>
-
 </project>
